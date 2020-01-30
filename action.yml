@@ -1,0 +1,15 @@
+name: 'Comment'
+description: 'Simple action to create a comment on a given PR'
+inputs:
+  github-token:
+    description: 'GitHub Token'
+    required: true'
+  comment:
+    description: 'Script that you want to run to generate the comment'
+outputs:
+  comment:
+    description: 'The output comment'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
